@@ -1,0 +1,15 @@
+{
+    "include": ["src/**/*.ts"],
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+				"target": "ES6",
+        "declaration": true,
+        "declarationDir": "dist/types",
+        "inlineSourceMap": true,
+        "skipDefaultLibCheck": true,
+        "outDir": "dist/cjs",
+        "lib": ["ES6"],
+        "strict": true,
+    }
+}

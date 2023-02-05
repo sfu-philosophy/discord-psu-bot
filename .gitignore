@@ -1,0 +1,14 @@
+# Project
+/dist
+
+# Development
+node_modules
+.env.local
+
+# System / Editor
+.DS_Store
+._*
+
+.vscode
+.idea
+*.swp

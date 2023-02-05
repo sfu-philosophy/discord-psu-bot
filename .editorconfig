@@ -1,0 +1,13 @@
+root = true
+
+[*.{ts,json,yaml,yml}]
+end_of_line = lf
+tab_width = 4
+indent_size = 4
+indent_style = tab
+insert_final_newline = true
+max_line_length = 120
+
+[*.{json,yaml,yml}]
+tab_width = 2
+indent_size = 2
