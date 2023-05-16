@@ -73,9 +73,14 @@ export default class Bot {
 		// Monkeypatch the Discord.js library if it's a user.
 		if (isUserBot) {
 			userbot(client);
-			// client.on('debug', msg => {
-			// 	console.log(msg);
-			// })
+
+			client.on('userbot-debug', (msg) => {
+				console.log("\x1B[33m%s\x1B[0m", msg);
+			});
+
+			client.on('debug', (msg) => {
+				console.log("\x1B[2m%s\x1B[0m", msg);
+			});
 		}
 
 		// Return a promise that will resolve when logged in, or when login fails.
