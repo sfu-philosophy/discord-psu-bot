@@ -2,11 +2,12 @@
   "name": "discord-hub-verifier",
   "version": "1.0.0",
   "description": "A Discord bot that verifies users who are in Discord hubs.",
-  "main": "dist/cjs/index.js",
+  "main": "dist/cjs/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
     "dev": "tsc -p . --watch",
+		"start": "node dist/cjs/main.js",
     "format": "prettier --write src"
   },
   "repository": {
